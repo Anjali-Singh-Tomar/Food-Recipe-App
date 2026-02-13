@@ -23,7 +23,7 @@ export default function Search({ foodData, setFoodData }) {
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className={styles.input - field}
+        className={styles.inputField}
       />
     </div>
   );

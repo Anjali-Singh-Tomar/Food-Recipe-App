@@ -1,0 +1,24 @@
+.itemCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 300px;
+  background-color: rgb(160, 237, 160);
+  border-radius: 10px;
+}
+.dishImage {
+  width: 90%;
+  border-radius: 10px;
+}
+.veiwMore {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+}
+.veiwMore:hover {
+  cursor: pointer;
+}
