@@ -1,3 +1,4 @@
+import styles from "./search.module.css";
 import { useEffect, useState } from "react";
 
 export default function Search({ foodData, setFoodData }) {
@@ -17,11 +18,12 @@ export default function Search({ foodData, setFoodData }) {
   }, [query]); //state is accepted as a dependency array
 
   return (
-    <div>
+    <div className={styles.searchContainer}>
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        className={styles.input - field}
       />
     </div>
   );
