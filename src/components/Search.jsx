@@ -24,6 +24,7 @@ export default function Search({ foodData, setFoodData }) {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         className={styles.inputField}
+        placeholder="Enter Dish name to search"
       />
     </div>
   );

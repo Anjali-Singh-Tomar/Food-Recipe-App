@@ -1,24 +1,41 @@
 .itemCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 300px;
-  background-color: rgb(160, 237, 160);
-  border-radius: 10px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  text-align: center;
 }
+
+.itemCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
 .dishImage {
-  width: 90%;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
   border-radius: 10px;
 }
+
+h3 {
+  margin: 12px 0;
+  font-size: 18px;
+  color: #333;
+}
+
 .veiwMore {
-  background-color: green;
+  background-color: #4dea38;
   color: white;
   border: none;
-  border-radius: 10px;
-  padding: 15px;
-}
-.veiwMore:hover {
+  padding: 8px 16px;
+  border-radius: 8px;
   cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.veiwMore:hover {
+  background-color: #7af66a;
 }

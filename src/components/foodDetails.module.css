@@ -1,0 +1,46 @@
+.foodDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.foodDetails h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #555;
+  flex-wrap: wrap;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.ingredientContainer,
+.instContainer {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.ingredientContainer h3,
+.instContainer h3 {
+  margin-bottom: 10px;
+}
+
+.instContainer li {
+  margin-bottom: 8px;
+}
