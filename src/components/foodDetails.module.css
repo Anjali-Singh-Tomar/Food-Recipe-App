@@ -44,3 +44,7 @@
 .instContainer li {
   margin-bottom: 8px;
 }
+.loading {
+  width: 50%;
+  border-radius: 50%;
+}

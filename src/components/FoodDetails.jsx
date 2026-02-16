@@ -39,19 +39,31 @@ export default function FoodDetails({ foodId }) {
         </div> -->need to include innerHTM */}
       <div className={styles.ingredientContainer}>
         <h3>Ingredeints:</h3>
-        {isLoading
-          ? "Loading..."
-          : dish.extendedIngredients.map((ingredeint) => (
-              <Ingredients ingredient={ingredeint} key={ingredeint.id} />
-            ))}
+        {isLoading ? (
+          <img
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXgwb2txanJreXl1b2dpcWU5aGhnYWJqcHVxOXE1OXdqMWh5YWhvMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JJLEyrGhIK82G3SDye/giphy.gif"
+            alt=""
+            className={styles.loading}
+          />
+        ) : (
+          dish.extendedIngredients.map((ingredeint) => (
+            <Ingredients ingredient={ingredeint} key={ingredeint.id} />
+          ))
+        )}
       </div>
       <div className={styles.instContainer}>
         <h3>Instructions: </h3>
-        {isLoading
-          ? "Loading..."
-          : dish.analyzedInstructions[0].steps.map((step) => (
-              <li key={step.number}>{step.step}</li>
-            ))}
+        {isLoading ? (
+          <img
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXgwb2txanJreXl1b2dpcWU5aGhnYWJqcHVxOXE1OXdqMWh5YWhvMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JJLEyrGhIK82G3SDye/giphy.gif"
+            alt=""
+            className={styles.loading}
+          />
+        ) : (
+          dish.analyzedInstructions[0].steps.map((step) => (
+            <li key={step.number}>{step.step}</li>
+          ))
+        )}
       </div>
     </div>
   );
