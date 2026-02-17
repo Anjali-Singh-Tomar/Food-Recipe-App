@@ -40,7 +40,9 @@
 .instContainer h3 {
   margin-bottom: 10px;
 }
-
+.instContainer {
+  padding-left: 30px;
+}
 .instContainer li {
   margin-bottom: 8px;
 }
